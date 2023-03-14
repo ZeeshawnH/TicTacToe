@@ -1,0 +1,28 @@
+body {
+    background-color: #0A2647;
+    color: white;
+    font-family:monospace,monospace;
+}
+
+.container {
+    margin-top: 5%;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+.game-display {
+    display: flex;
+    align-items: center;
+}
+
+.tile {
+    margin: 10%;
+    border-color: white;
+    border-width: 10px;
+    width: 100px;
+    height: 100px;
+}
