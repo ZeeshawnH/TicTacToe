@@ -15,14 +15,28 @@ body {
 }
 
 .game-display {
-    display: flex;
-    align-items: center;
+    margin: auto;
+    width: 25%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+}
+
+.game-display:after {
+    content: "";
+    display: block;
+    padding-bottom: 300%;
 }
 
 .tile {
-    margin: 10%;
-    border-color: white;
-    border-width: 10px;
-    width: 100px;
-    height: 100px;
+    border-radius: 7%;
+    margin: 3px;
+    border: 3px solid aliceblue;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+.tile:hover {
+    transition: 500ms;
+    background-color:aliceblue
 }
