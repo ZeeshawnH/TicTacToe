@@ -6,6 +6,7 @@ body {
 
 .container {
     margin-top: 5%;
+    position: relative;
 }
 
 .title {
@@ -15,26 +16,28 @@ body {
 }
 
 .game-display {
-    margin: auto;
-    width: 25%; 
-    display: grid;
-    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    width: 600px;
+	height: 600px;
+	margin: 0 auto;
+    background-color: #34495e;
+    color: #fff;
+    border: 6px solid #2c3e50;
+    border-radius: 10px;
+	
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 }
 
-/* .game-display:after {
-    content: "";
-    display: block;
-    padding-bottom: 300%;
-} */
 
 .tile {
-    border-radius: 7%;
-    margin: 3px;
-    border: 3px solid aliceblue;
+    border: 6px solid #2c3e50;
+    border-radius: 5px;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 4em;
     width: auto;
-    height: auto;
+    height: 189px;
     cursor: pointer;
-    padding: 3%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +47,11 @@ body {
     background-color:aliceblue
 }
 
-.circle {
-    max-width: 100%;
-    max-height: 100%;
+#button {
+    margin: auto;
+}
+
+#reset {
+    margin: auto;
+
 }
